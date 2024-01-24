@@ -16,5 +16,8 @@ Here are some ideas to get you started:
 -->
 
 
+###
 
-![snake gif](https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake.gif)
+<img src="https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+
+###
