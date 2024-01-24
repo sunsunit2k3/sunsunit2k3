@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 ###
 <div align="center">
 <a href="https://git.io/streak-stats"><img src="https://streak-stats.demolab.com?user=longsynguyen&theme=black-ice&border_radius=5" alt="GitHub Streak" height="220" alt="streak graph"/></a>
-</div
+</div>
 ###
 
 <img src="https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
