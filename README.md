@@ -24,4 +24,3 @@
 
 <img src="https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 
-###
