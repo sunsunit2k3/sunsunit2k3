@@ -1,5 +1,4 @@
 ### Hi! I'm Nguyen Sy Long. I'm study at Hanoi University Mining and Geology
-###
 
 <h3 align="left">Language and tools</h3>
 <div align="left">
@@ -20,7 +19,6 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="52" alt="react logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="52" alt="vscode logo"  />
 </div>
-###
 
 <img src="https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 
