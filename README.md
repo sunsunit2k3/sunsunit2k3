@@ -1,4 +1,6 @@
-### Hi! I'm Nguyen Sy Long. I'm study at Hanoi University Mining and Geology
+### Hi! I'm Nguyen Sy Long. 
+### I'm 21 years old
+### I'm studying at Hanoi University Mining and Geology
 
 <h3 align="left">Language and tools</h3>
 <div align="left">
