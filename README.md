@@ -1,5 +1,5 @@
 ### Hi! I'm Nguyen Sy Long. 
-### I'm 21 years old
+### I'm 22 years old
 ### I'm studying at Hanoi University Mining and Geology
 
 <h3 align="left">Language and tools</h3>
