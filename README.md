@@ -2,7 +2,7 @@
 
 ### I'm 23 years old.
 
-### I graduated from Hanoi University of Mining and Geology.
+### I from Hanoi.
 
 ### I'm currently working as a Freelance Software Developer.
 
