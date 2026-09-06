@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
+import { themes, svg, text, mono, line, rect } from './design.mjs';
 
 export const escapeXml = (value) => String(value).replace(/[&<>"']/g, (c) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;',
@@ -55,33 +56,60 @@ export async function fetchRepositories(username, { fetchImpl = fetch, token = p
   throw new Error('Repository pagination limit reached; refusing to publish incomplete totals');
 }
 
-export function renderMetrics(snapshot, dark = false) {
+export function renderMetrics(snapshot, dark = false, mobile = false) {
   const data = summarize(snapshot.repositories, snapshot.username);
-  const p = dark ? { bg: '#0d1623', line: '#253448', text: '#edf5fc', muted: '#a4b6c8', track: '#223146' }
-    : { bg: '#f4f8fb', line: '#d5e2e9', text: '#142b3d', muted: '#4d6577', track: '#deeaef' };
-  const colors = ['#24b99a', '#489de5', '#af86e8', '#d99939', '#e27188', '#638ead'];
+  const p = themes[dark ? 'dark' : 'light'];
+  const colors = [p.accent, p.blue, p.purple, p.orange, dark ? '#db94a4' : '#9b4d64', dark ? '#8ba992' : '#496952'];
   const top = data.languages.slice(0, 5);
   const rest = data.languages.slice(5).reduce((s, [, n]) => s + n, 0);
   if (rest) top.push(['Other', rest]);
   const total = data.languages.reduce((s, [, n]) => s + n, 0);
-  const cards = [['PUBLIC REPOS', data.repositories], ['NON-FORK REPOS', data.originals], ['STARS RECEIVED', data.stars], ['FORKS RECEIVED', data.forks]];
   const date = new Date(snapshot.updatedAt);
   if (Number.isNaN(date.getTime())) throw new Error('Invalid snapshot timestamp');
   const stamp = date.toISOString().replace('T', ' ').slice(0, 16) + ' UTC';
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500" viewBox="0 0 960 500" role="img" aria-labelledby="title desc">
-  <title id="title">${escapeXml(snapshot.username)} — public GitHub metrics</title>
-  <desc id="desc">${data.repositories} public repositories, ${data.originals} non-fork repositories, ${data.stars} stars and ${data.forks} forks received on non-fork repositories. Updated ${stamp}.</desc>
-  <rect x="1" y="1" width="958" height="498" rx="24" fill="${p.bg}" stroke="${p.line}"/>
-  <g font-family="DejaVu Sans,Arial,sans-serif" fill="${p.text}">
-  <text x="36" y="47" font-size="15" font-weight="700" letter-spacing="2">PUBLIC / GITHUB</text>
-  <text x="924" y="47" text-anchor="end" font-size="12" fill="${p.muted}">${stamp}</text>
-  ${cards.map(([label, count], i) => `<g transform="translate(${36 + i * 226},79)"><text y="52" font-size="48" font-weight="700">${count}</text><text y="81" font-size="12" fill="${p.muted}" letter-spacing="1">${label}</text></g>`).join('')}
-  <path d="M36 191H924" stroke="${p.line}"/>
-  <text x="36" y="224" font-size="16" font-weight="700">Language mix</text>
-  <text x="924" y="224" text-anchor="end" font-size="12" fill="${p.muted}">Primary language · non-fork repositories</text>
-  ${top.length ? top.map(([name, n], i) => { const x = 36 + (i % 2) * 460; const y = 264 + Math.floor(i / 2) * 66; return `<g transform="translate(${x},${y})"><circle cx="5" cy="-5" r="4" fill="${colors[i]}"/><text x="18" font-size="14">${escapeXml(name)}</text><text x="418" text-anchor="end" font-size="13" fill="${p.muted}">${n} repos · ${Math.round(n / total * 100)}%</text><rect y="13" width="418" height="7" rx="3.5" fill="${p.track}"/><rect y="13" width="${(418 * n / total).toFixed(2)}" height="7" rx="3.5" fill="${colors[i]}"/></g>`; }).join('') : `<text x="36" y="275" font-size="14" fill="${p.muted}">No primary language data available yet.</text>`}
-  <text x="36" y="470" font-size="12" fill="${p.muted}">Built from the GitHub API · refreshed daily with GitHub Actions</text>
-  </g></svg>\n`;
+  const cards = [['PUBLIC REPOS', data.repositories], ['NON-FORK REPOS', data.originals], ['STARS RECEIVED', data.stars], ['FORKS RECEIVED', data.forks]];
+  if (mobile) {
+    let body = mono(24,32,'PUBLIC / GITHUB',13,p.accent)+mono(24,57,stamp,12,p.muted);
+    body += cards.map(([label,n],i)=>{
+      const x=24+i%2*247;const y=128+Math.floor(i/2)*116;
+      return text(x,y,String(n).padStart(2,'0'),52,i===0?p.accent:p.text,'font-weight="700" letter-spacing="-2"')+mono(x,y+30,label,12,p.muted);
+    }).join('');
+    body+=line(24,296,486,296,p.line)+text(24,330,'Language mix',23,p.text,'font-weight="700"')+text(24,357,'Primary language · non-fork repos',15,p.muted);
+    let offset=24;
+    for(let i=0;i<top.length;i++){
+      const [name,n]=top[i];const width=462*n/total;
+      body+=rect(offset,377,Math.max(width-3,0),13,3,colors[i]);offset+=width;
+      const x=24+i%2*240;const y=424+Math.floor(i/2)*40;
+      body+=`<circle cx="${x+4}" cy="${y-5}" r="4" fill="${colors[i]}"/>`+text(x+15,y,name,15,p.text)+mono(x+220,y,`${Math.round(n/total*100)}%`,13,p.muted,'text-anchor="end"');
+    }
+    if(!top.length)body+=text(24,420,'No primary language data available yet.',16,p.muted);
+    body+=line(24,530,486,530,p.line)+text(24,562,'Refreshed daily with GitHub Actions',14,p.muted);
+    return svg(510,586,`${snapshot.username} — public GitHub metrics`,p,body);
+  }
+  let body = mono(31,34,'THE PUBLIC SIDE OF MY WORK.',10,p.muted,'letter-spacing="1.1"') +
+    mono(1008,34,stamp,10,p.muted,'text-anchor="end"');
+  body += cards.map(([label,n],i) => {
+    const x = 32+i*252;
+    return text(x,104,String(n).padStart(2,'0'),51,i===0?p.accent:p.text,'font-weight="700" letter-spacing="-2"')+
+      mono(x,131,label,10,p.muted,'letter-spacing="1"')+(i<3?line(x+226,66,x+226,135,p.line):'');
+  }).join('');
+  body += line(32,158,1008,158,p.line)+text(32,193,'Language mix',16,p.text,'font-weight="700"')+
+    text(1008,193,'Primary language · non-fork repositories',11,p.muted,'text-anchor="end"');
+  let offset=32;
+  const segmentWidth=976;
+  const bar = top.map(([name,n],i)=>{
+    const width=segmentWidth*n/total;
+    const result=rect(offset,213,Math.max(width-4,0),12,3,colors[i]);offset+=width;return result;
+  }).join('');
+  const legend=top.map(([name,n],i)=>{
+    const x=32+i%3*334;const y=254+Math.floor(i/3)*29;
+    return `<circle cx="${x+4}" cy="${y-4}" r="4" fill="${colors[i]}"/>`+
+      text(x+17,y,name,12,p.text)+mono(x+290,y,`${n} · ${Math.round(n/total*100)}%`,11,p.muted,'text-anchor="end"');
+  }).join('');
+  body+=top.length?bar+legend:text(32,236,'No primary language data available yet.',13,p.muted);
+  body+=line(32,307,1008,307,p.line)+mono(32,335,'GITHUB API → JAVASCRIPT → SVG',9,p.muted,'letter-spacing=".7"')+
+    text(1008,335,'Refreshed daily with GitHub Actions',10,p.muted,'text-anchor="end"');
+  return svg(1040,355,`${snapshot.username} — public GitHub metrics`,p,body,{description:`${data.repositories} public repositories, ${data.originals} non-fork repositories, ${data.stars} stars and ${data.forks} forks received on non-fork repositories. Updated ${stamp}.`});
 }
 
 export async function main(args = process.argv.slice(2)) {
@@ -106,10 +134,14 @@ export async function main(args = process.argv.slice(2)) {
   // Render before writing: API/validation errors preserve the last good assets.
   const light = renderMetrics(snapshot);
   const dark = renderMetrics(snapshot, true);
+  const mobileLight = renderMetrics(snapshot, false, true);
+  const mobileDark = renderMetrics(snapshot, true, true);
   const output = options['--output'] || 'assets';
   await mkdir(output, { recursive: true });
   await writeFile(resolve(output, 'metrics-light.svg'), light);
   await writeFile(resolve(output, 'metrics-dark.svg'), dark);
+  await writeFile(resolve(output, 'metrics-mobile-light.svg'), mobileLight);
+  await writeFile(resolve(output, 'metrics-mobile-dark.svg'), mobileDark);
   await writeFile(resolve(output, 'metrics.json'), JSON.stringify(snapshot, null, 2) + '\n');
   console.log(`Rendered metrics for ${snapshot.username}: ${snapshot.repositories.length} public repositories`);
 }
