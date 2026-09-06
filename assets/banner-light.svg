@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="310" viewBox="0 0 960 310" role="img" aria-labelledby="title desc">
+<title id="title">Nguyễn Sỹ Long — Software developer</title>
+<desc id="desc">Mapping ideas into real-world applications. Web, mobile and geospatial. Hanoi, Vietnam.</desc>
+<defs><clipPath id="frame"><rect x="1" y="1" width="958" height="308" rx="24"/></clipPath><linearGradient id="fade"><stop stop-color="#f4f8fb"/><stop offset="1" stop-color="#f4f8fb" stop-opacity="0"/></linearGradient></defs>
+<style>
+.route {stroke-dasharray: 7 10; animation: travel 18s linear infinite;}
+@keyframes travel { to { stroke-dashoffset: -170; } }
+@media (prefers-reduced-motion: reduce) { .route {animation:none;} }
+</style>
+<rect x="1" y="1" width="958" height="308" rx="24" fill="#f4f8fb" stroke="#d5e2e9"/>
+<g clip-path="url(#frame)">
+<g fill="none" stroke="#b5d4d7" stroke-width="1" opacity=".6"><ellipse cx="798" cy="172" rx="40" ry="24.4" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="65" ry="39.6" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="90" ry="54.9" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="115" ry="70.1" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="140" ry="85.4" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="165" ry="100.6" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="190" ry="115.9" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="215" ry="131.2" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="240" ry="146.4" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="265" ry="161.7" transform="rotate(-32 798 172)"/><ellipse cx="798" cy="172" rx="290" ry="176.9" transform="rotate(-32 798 172)"/></g>
+<rect x="420" y="1" width="230" height="308" fill="url(#fade)"/>
+<path d="M682 246L719 186L787 167L822 107L889 68" fill="none" stroke="#087c69" stroke-width="2" opacity=".23"/>
+<path class="route" d="M682 246L719 186L787 167L822 107L889 68" fill="none" stroke="#087c69" stroke-width="2"/>
+<g fill="#f4f8fb" stroke="#087c69" stroke-width="2"><circle cx="682" cy="246" r="5"/><circle cx="787" cy="167" r="7"/><circle cx="889" cy="68" r="5"/></g>
+<circle cx="787" cy="167" r="19" fill="none" stroke="#087c69" opacity=".35"/>
+</g>
+<g font-family="DejaVu Sans,Arial,sans-serif">
+<text x="38" y="48" font-size="12" font-weight="700" letter-spacing="2.4" fill="#087c69">SUNSUNIT2K3 / DEVELOPER</text>
+<text x="36" y="112" font-size="44" font-weight="700" letter-spacing="-1.5" fill="#142b3d">Nguyễn Sỹ Long</text>
+<text x="38" y="154" font-size="20" fill="#142b3d">Mapping ideas into</text>
+<text x="38" y="184" font-size="20" fill="#142b3d">real-world applications.</text>
+<text x="38" y="237" font-size="12" font-weight="700" letter-spacing="1.8" fill="#4d6577">WEB / MOBILE / GEOSPATIAL</text>
+<circle cx="42" cy="273" r="3" fill="#087c69"/>
+<text x="54" y="277" font-size="12" fill="#4d6577">Hanoi, Vietnam</text>
+<text x="920" y="279" text-anchor="end" font-size="11" letter-spacing="2" fill="#4d6577">BUILD · MAP · ITERATE</text>
+</g></svg>

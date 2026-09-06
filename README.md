@@ -1,49 +1,46 @@
-### Hi! I'm Nguyen Sy Long 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" alt="Nguyễn Sỹ Long — Software developer. Mapping ideas into real-world applications." width="100%">
+</picture>
 
-### I'm 23 years old.
+### Xin chào, I'm Long 👋
 
-### I from Hanoi.
+Freelance software developer based in **Hanoi, Vietnam**. I build web applications, mobile experiences, and tools that make geographic data useful.
 
-### I'm currently working as a Freelance Software Developer.
+- **Web & APIs** — JavaScript, Node.js, Express.
+- **Mobile** — Flutter and Dart.
+- **Maps & data** — GIS, GeoServer, PostgreSQL, and Python.
+- **AI-assisted development** — Codex, Claude, and Antigravity.
 
-<h3 align="left">Languages and Tools</h3>
+### Selected work
 
-<div align="left">
-  <!-- Backend / Languages -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" width="52" alt="express" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="40" width="52" alt="flutter" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="52" alt="javascript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" width="52" alt="nodejs" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" width="52" alt="python" />
+| Project | Focus |
+| :--- | :--- |
+| [Cẩm Phả HydroMap API](https://github.com/sunsunit2k3/server-campha) | Node.js / Express API for the Cẩm Phả HydroMap project. |
+| [GIS pollution warning](https://github.com/sunsunit2k3/gis-web-pollution-warning) | A JavaScript web GIS project for pollution warnings. |
+| [Air pollution data](https://github.com/sunsunit2k3/crawl_data_air_pollution) | TypeScript tooling for collecting air pollution data. |
+| [Flutter to-do app](https://github.com/sunsunit2k3/flutter_todo_user) | A mobile to-do project built with Dart and Flutter. |
 
-  <!-- Databases -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" width="52" alt="mongodb" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" width="52" alt="mysql" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" width="52" alt="postgresql" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="52" alt="redis" />
+### Toolbox
 
-  <!-- DevOps / Cloud -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" width="52" alt="docker" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="40" width="52" alt="aws" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="40" width="52" alt="google cloud" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" height="40" width="52" alt="firebase" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="52" alt="redis" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" width="52" alt="git" />
+| Layer | Technologies |
+| :--- | :--- |
+| Languages | JavaScript · Dart · Python · HTML / CSS |
+| Backend | Node.js · Express |
+| Mobile | Flutter · Firebase |
+| Data | PostgreSQL · MongoDB · MySQL · Redis |
+| Infrastructure | Docker · AWS · Google Cloud · Git |
+| Geospatial & analysis | GeoServer · Jupyter · pandas |
 
-  <!-- Data / Tools -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="40" width="52" alt="jupyter" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" width="52" alt="pandas" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="52" alt="vscode" />
-</div>
+### GitHub, in numbers
 
-<h3 align="left">AI & Development Tools</h3>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
+  <img src="assets/metrics-light.svg" alt="Public GitHub repository metrics and primary language breakdown; data and timestamp are available in assets/metrics.json." width="100%">
+</picture>
 
-<div align="left">
-  <img src="https://img.shields.io/badge/OpenAI_Codex-000000?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI Codex" />
-  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude" />
-  <img src="https://img.shields.io/badge/Antigravity-1A1A1A?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity" />
-  <img src="https://img.shields.io/badge/GeoServer-0084C8?style=for-the-badge&logo=leaflet&logoColor=white" alt="GeoServer" />
-</div>
+<sub>Public repositories only. Stars and forks received are counted on non-fork repositories. Language bars count each non-fork repository's primary language, not skill level or lines of code.</sub>
 
-<img src="https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+---
+
+[Explore my repositories →](https://github.com/sunsunit2k3?tab=repositories) · [How this profile updates](docs/profile-maintenance.md)
