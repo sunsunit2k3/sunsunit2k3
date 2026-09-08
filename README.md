@@ -1,99 +1,49 @@
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/banner-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/banner-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <img src="assets/banner-light.svg" alt="Nguyễn Sỹ Long — Software for the world beyond the screen. Web, mobile and geospatial. Hanoi, Vietnam." width="100%">
-</picture>
+### Hi! I'm Nguyen Sy Long 👋
 
-<p align="center">
-  <b>Freelance software developer.</b> I build web apps, mobile experiences,<br>
-  and tools that make geographic data useful.
-</p>
+### I'm 23 years old.
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/section-work-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/section-work-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/section-work-dark.svg">
-  <img src="assets/section-work-light.svg" alt="01 — Selected work" width="100%">
-</picture>
+### I from Hanoi.
 
-<a href="https://github.com/sunsunit2k3/server-campha">
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-hydromap-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/project-hydromap-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/project-hydromap-dark.svg">
-  <img src="assets/project-hydromap-light.svg" alt="Cẩm Phả HydroMap — Node.js, Express, PostgreSQL" width="49%">
-</picture>
-</a>
-<a href="https://github.com/sunsunit2k3/gis-web-pollution-warning">
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-pollution-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/project-pollution-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/project-pollution-dark.svg">
-  <img src="assets/project-pollution-light.svg" alt="GIS Pollution Warning — JavaScript and web GIS" width="49%">
-</picture>
-</a>
+### I'm currently working as a Freelance Software Developer.
 
-<a href="https://github.com/sunsunit2k3/crawl_data_air_pollution">
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-air-data-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/project-air-data-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/project-air-data-dark.svg">
-  <img src="assets/project-air-data-light.svg" alt="Air Pollution Data — TypeScript data collection" width="49%">
-</picture>
-</a>
-<a href="https://github.com/sunsunit2k3/flutter_todo_user">
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/project-flutter-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/project-flutter-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/project-flutter-dark.svg">
-  <img src="assets/project-flutter-light.svg" alt="Flutter to-do app — Flutter and Dart" width="49%">
-</picture>
-</a>
+<h3 align="left">Languages and Tools</h3>
 
+<div align="left">
+  <!-- Backend / Languages -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" width="52" alt="express" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="40" width="52" alt="flutter" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html5" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="52" alt="javascript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" width="52" alt="nodejs" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" width="52" alt="python" />
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/section-stack-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/section-stack-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/section-stack-dark.svg">
-  <img src="assets/section-stack-light.svg" alt="02 — The toolkit" width="100%">
-</picture>
+  <!-- Databases -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" width="52" alt="mongodb" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" width="52" alt="mysql" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" width="52" alt="postgresql" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="52" alt="redis" />
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/toolkit-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/toolkit-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/toolkit-dark.svg">
-  <img src="assets/toolkit-light.svg" alt="Web and APIs: JavaScript, Node.js, Express. Mobile: Flutter, Dart, Firebase. Geospatial: GeoServer, GIS, PostgreSQL. Data: Python, pandas, Jupyter, MongoDB, MySQL, Redis. Infrastructure: Docker, Git, AWS, Google Cloud. AI: Codex, Claude, Antigravity." width="100%">
-</picture>
+  <!-- DevOps / Cloud -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" width="52" alt="docker" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="40" width="52" alt="aws" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="40" width="52" alt="google cloud" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" height="40" width="52" alt="firebase" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="52" alt="redis" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" width="52" alt="git" />
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/section-metrics-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/section-metrics-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/section-metrics-dark.svg">
-  <img src="assets/section-metrics-light.svg" alt="03 — On GitHub" width="100%">
-</picture>
+  <!-- Data / Tools -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="40" width="52" alt="jupyter" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" width="52" alt="pandas" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="52" alt="vscode" />
+</div>
 
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/metrics-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/metrics-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
-  <img src="assets/metrics-light.svg" alt="Public repository metrics; exact values and timestamp in assets/metrics.json." width="100%">
-</picture>
+<h3 align="left">AI & Development Tools</h3>
 
-<details>
-<summary>About these numbers</summary>
+<div align="left">
+  <img src="https://img.shields.io/badge/OpenAI_Codex-000000?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI Codex" />
+  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude" />
+  <img src="https://img.shields.io/badge/Antigravity-1A1A1A?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity" />
+  <img src="https://img.shields.io/badge/GeoServer-0084C8?style=for-the-badge&logo=leaflet&logoColor=white" alt="GeoServer" />
+</div>
 
-Public repositories only. Stars and forks received are counted on non-fork repositories. Language proportions count each non-fork repository's primary language; they do not measure skill level or lines of code.
-
-[View the data](assets/metrics.json) · [How the profile updates](docs/profile-maintenance.md)
-
-</details>
-
-<a href="https://github.com/sunsunit2k3?tab=repositories">
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/footer-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/footer-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg">
-  <img src="assets/footer-light.svg" alt="Always building. Always learning. Explore my repositories." width="100%">
-</picture>
-</a>
+<img src="https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
