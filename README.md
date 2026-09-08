@@ -1,49 +1,47 @@
-### Hi! I'm Nguyen Sy Long 👋
-
-### I'm 23 years old.
-
-### I from Hanoi.
-
-### I'm currently working as a Freelance Software Developer.
-
-<h3 align="left">Languages and Tools</h3>
-
-<div align="left">
-  <!-- Backend / Languages -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" height="40" width="52" alt="express" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" height="40" width="52" alt="flutter" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="52" alt="html5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="52" alt="javascript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" width="52" alt="nodejs" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" width="52" alt="python" />
-
-  <!-- Databases -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" height="40" width="52" alt="mongodb" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" width="52" alt="mysql" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" width="52" alt="postgresql" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="52" alt="redis" />
-
-  <!-- DevOps / Cloud -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" width="52" alt="docker" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="40" width="52" alt="aws" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="40" width="52" alt="google cloud" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" height="40" width="52" alt="firebase" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" height="40" width="52" alt="redis" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" width="52" alt="git" />
-
-  <!-- Data / Tools -->
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="40" width="52" alt="jupyter" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" width="52" alt="pandas" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" width="52" alt="vscode" />
+<!-- Header -->
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:6E40C9,50:0969DA,100:00C6FF&height=220&section=header&text=Nguyen%20Sy%20Long&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Freelance%20Software%20Developer&descAlignY=58&descSize=20" />
 </div>
 
-<h3 align="left">AI & Development Tools</h3>
-
-<div align="left">
-  <img src="https://img.shields.io/badge/OpenAI_Codex-000000?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI Codex" />
-  <img src="https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude" />
-  <img src="https://img.shields.io/badge/Antigravity-1A1A1A?style=for-the-badge&logo=google&logoColor=white" alt="Antigravity" />
-  <img src="https://img.shields.io/badge/GeoServer-0084C8?style=for-the-badge&logo=leaflet&logoColor=white" alt="GeoServer" />
+<!-- Typing animation -->
+<div align="center">
+  <a href="https://github.com/LongSyNguyen">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Nguyen+Sy+Long+%F0%9F%91%8B;Freelance+Software+Developer;Flutter+%7C+Node.js+%7C+WebGIS+Developer;Building+useful+digital+experiences" alt="Typing SVG" />
+  </a>
 </div>
 
-<img src="https://github.com/LongSyNguyen/LongSyNguyen/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+<br>
+
+<!-- Social badges -->
+<div align="center">
+  <a href="https://github.com/LongSyNguyen">
+    <img src="https://img.shields.io/badge/GitHub-LongSyNguyen-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="mailto:YOUR_EMAIL@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=LongSyNguyen&style=for-the-badge&color=0969DA&label=PROFILE+VIEWS" alt="Profile views" />
+</div>
+
+<br>
+
+## 👨‍💻 About Me
+
+```javascript
+const nguyenSyLong = {
+  location: "Hanoi, Vietnam 🇻🇳",
+  role: "Freelance Software Developer",
+  interests: [
+    "Full-stack Development",
+    "Mobile Applications",
+    "WebGIS & Digital Maps",
+    "Cloud & AI Technologies"
+  ],
+  currentlyLearning: [
+    "System Design",
+    "Cloud Architecture",
+    "Artificial Intelligence"
+  ],
+  goal: "Build products that solve real-world problems",
+  funFact: "I turn coffee into code ☕"
+};
